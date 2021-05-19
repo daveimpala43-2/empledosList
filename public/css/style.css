@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin:  0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8f5f1;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: #f8f5f1;
+    min-width: 30%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.6);
+}
+
+.containerForm {
+    background-color: #f8f5f1;
+    min-width: 30%;
+    max-height: 55%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.6);
+}
+
+.group{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.groupModal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+table {
+    font-family: 'Roboto', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tbody tr:hover{
+    background-color: #f2edd7;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+label {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    border: 1px solid #343f56;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+select {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    border: 1px solid #343f56;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
+button {
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.primary {
+    background-color: #f8f8f8;
+    color: #343434;
+    border: 1px solid #3a6351;
+    width: 100%;
+}
+
+.primary:hover {
+    background-color: #343f56;
+    color: #f8f5f1;
+}
+
+.add {
+    width: 100%;
+    background-color: #f8f8f8;
+    color: #3a6351;
+    border: 1px solid #3a6351;
+}
+
+.add:hover {
+    background-color: #3a6351;
+    color: #f8f5f1;
+}
+
+.err {
+    color: #f05454;
+    border-color: #f05454;
+}
+
+span{
+    margin-left: 5px;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.modalBack{
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal{
+    background-color: #f8f5f1;
+    min-width: 30%;
+    height: 40%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.grouptitle {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titleFiltro{
+    width: 10%;
+}
+
+.filtro {
+    width: 150px; 
+}
+
+.menorS{
+    font-family: 'Roboto', monospace;
+    background-color: #f05454;
+}
+
+.mayorS{
+    font-family: 'Roboto', monospace;
+    background-color: #5aa469;
+}
+
+.m-t-2 {
+    margin-top: 8px;
+}
+
+.m-b-2 {
+    margin-bottom: 8px;
+}
+
+.edit{
+    background-color: #f8f5f1;
+    border: 1px solid #3a6351;
+    color: #3a6351;
+    width: 100%;
+}
+
+.edit:hover {
+    background-color: #3a6351;
+    color: #f8f5f1;
+}
+
+.danger{
+    background-color: #f8f5f1;
+    border: 1px solid #f05454;
+    color: #f05454;
+    width: 100%;
+}
+.danger:hover{
+    background-color: #f05454;
+    color: #f8f8f8;
+}
+
+.photoB{
+    background-color: #f8f5f1;
+    border: 1px solid #343f56;
+    color: #343f56;
+}
+
+.photoB:hover{
+    background-color: #343434;
+    color: #f8f8f8;
+}
+
+.closeModal{
+    background-color: #f8f5f1;
+    color: #ce6262;
+    border: 1px solid #ce6262;
+}
+
+.closeModal:hover {
+    background-color: #ce6262;
+    color: #f8f5f1;
+}
+
+.leyenda {
+    font-size: 11px;
+}

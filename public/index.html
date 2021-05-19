@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Lista de empleados</title>
+</head>
+<body>
+
+   <div class="content">
+        <!--Tabla de empleados-->
+
+        <div class="container">
+
+            <div class="grouptitle m-b-2">
+                <label class="titleFiltro" for="">Filtrar</label>
+                    <input name="filtro" id="filtro" class="filtro" placeholder="Busqueda"/>
+                    <select name="typeFil" id="typeFil">
+                        <option value="nombre">Nombre</option>
+                        <option value="company">Empresa</option>
+                    </select>
+            </div>
+
+            <div class="grouptitle m-b-2">
+                <label for="">Tipo de moneda</label>
+                    <select name="cambio" id="cambio">
+                        <option value="MXM">Pesos</option>
+                        <option value="USD">Dolares</option>
+                    </select>
+                
+            </div>
+
+            <button class="add m-b-2" id="addEmp">Agregar Empleado</button>
+
+            <hr>
+            <table id="emplado-list">
+
+                <caption id="Title">Emleados</caption>
+
+                <thead>
+                    <th>Foto</th>
+                    <th>Nombre</th>
+                    <th>Empresa</th>
+                    <th>Salario</th>
+                    <th>Modificar</th>
+                    <th>Eliminar</th>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+   </div>
+
+   <div class="modalBack d-none" id="modalFoto">
+        <div class="containerForm">
+            <div class="groupModal">
+                <label id="señal">Tomar Foto</label>
+                <button id="closeModalPutP" class="closeModal">Cerrar</button>
+            </div>
+            <img id="photo"/>
+            <hr>
+            <button id="TakePhoto">Tamar Foto</button>
+        </div>
+    </div>
+
+   <div class="modalBack d-none" id="modalAdd">
+        <div class="containerForm">
+        
+            <div class="groupModal">
+                <h3>Agregar empleado</h3>
+                <button id="closeModalAdd" class="closeModal">Cerrar</button>
+            </div>
+            
+            <span class="leyenda">Cambio en pesos (MXM)</span>
+        
+            <div class="group">
+                <label class="m-t-2 m-b-2">Nombre del empleado</label>
+                <input type="text" id="employeeName" placeholder="Nombre"/><br>
+            </div> 
+            <span class="err d-none" id="errEmp"></span>
+        
+            <div class="group">
+                <label class="m-t-2 m-b-2">Nombre de la empresa</label>
+                <input type="text" id="companyName" placeholder="Empresa"/><br>
+                
+            </div>
+            <span class="err d-none" id="errCom"></span>
+        
+            <div class="group">
+                <label class="m-t-2 m-b-2">Salario del empleado</label>
+                <input type="number" id="salary" placeholder="Salario"/><br>
+            </div>
+            <span class="err d-none" id="errSal"></span>
+        
+            <button class="primary m-t-2" id="addEmployee">Agregar</button>
+                
+        </div>
+    </div>
+    
+   <div class="modalBack d-none" id="modal">
+        <div class="modal">
+        
+            <div class="groupModal">
+                <h3>Editar empleado</h3>
+                <button id="closeModalPut" class="closeModal">Cerrar</button>
+            </div>
+            <span class="leyenda">Cambio en pesos (MXM)</span>
+        
+            <div class="group">
+                <label class="m-t-2 m-b-2">Nombre del empleado</label>
+                <input type="text" id="putEmployeeName" placeholder="Nombre"/><br>
+            </div> 
+            <span class="err d-none" id="errEmpPut"></span>
+        
+            <div class="group">
+                <label class="m-t-2 m-b-2">Salario del empleado</label>
+                <input type="number" id="putSalary" placeholder="Salario"/><br>
+            </div>
+            <span class="err d-none" id="errSalPut"></span>
+        
+            <button class="primary m-t-2" id="putEmployeeM">Agregar</button>
+                
+        </div>
+   </div>
+
+   
+
+   
+
+</body>
+
+<!-- recommended -->
+<script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+
+<!-- use 5.6.2 or any other version on cdnjs -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.6.2/RecordRTC.js"></script>
+
+<!-- bower -->
+<script src="/js/RecordRTC.js"></script>+
+
+<script type="module" src="/js/index.js"></script>
+
+</html>
